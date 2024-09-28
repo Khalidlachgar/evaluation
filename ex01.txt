@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+      double base, hauteur, perimetre, aire;
+
+   
+      printf("entrez la base d triangle : ");
+    scanf("%lf", &base); 
+    
+    printf("entrez la hauteur de triangle : ");
+    scanf("%lf", &hauteur);
+
+ 
+    aire = (base * hauteur) / 2;
+   
+    double hypotenuse = sqrt((base / 2) * (base / 2) + hauteur * hauteur);
+    
+    perimetre = base + 2 * hypotenuse;
+    printf("aire du triangle : %.2lf\n", air);
+    
+    printf ("perimetre du triangle : %.2lf\n", perimetre);
+
+    return 0;
+}
+
+
+ 

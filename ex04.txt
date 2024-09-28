@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+    float t[5];
+     float max, min;
+
+    printf("veuillez  5 températures :\n");
+       for (int i = 0; i < 5; i++) {
+        printf("température %d : ", i + 1);
+        scanf("%f", &t[i]);
+    }
+
+      max = t[0];
+    min = t[0];
+    for (int i = 1; i < 5; i++) {
+              if (t[i] > max) {
+            max = t[i];
+        }
+        if (t[i] < min) {
+            min = t[i];
+        }
+    }
+
+  
+    printf("La température la plus élevée est : %.2f\n",max);
+    
+    printf("La température la plus basse est : %.2f\n", min);
+
+
+
+    return 0;
+}
